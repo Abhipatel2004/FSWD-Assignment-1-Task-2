@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running App Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen overflow-hidden bg-gradient-to-b from-indigo-800 to-indigo-600">
+    <div class="flex flex-col w-64 bg-indigo-800 text-white shadow-xl md:w-1/4 lg:w-1/5 xl:w-1/6">
+      <div class="flex items-center justify-center h-16 border-b border-indigo-700">
+        <h2 class="text-2xl font-semibold">RunTrack</h2>
+      </div>
+      <nav class="flex flex-col p-4 space-y-4">
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">Dashboard</a>
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">My Runs</a>
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">Leaderboard</a>
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">Profile</a>
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">Settings</a>
+        <a href="#" class="text-white hover:bg-indigo-700 px-4 py-2 rounded-md transition-all">Logout</a>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-1 flex flex-col p-6 space-y-6 bg-gray-100 overflow-auto">
+      <!-- Top Header -->
+      <header class="flex justify-between items-center">
+        <h1 class="text-3xl font-semibold text-indigo-900">Welcome, Abhi Bhimani</h1>
+        <div class="flex space-x-4 items-center">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User Avatar" class="w-12 h-12 rounded-full border-2 border-white">
+        </div>
+      </header>
+
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <!-- Total Distance -->
+        <div class="bg-gradient-to-b from-green-300 to-green-500 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-white">Total Distance</h2>
+          <p class="text-4xl font-bold text-white">150 km</p>
+        </div>
+
+        <!-- Total Time -->
+        <div class="bg-gradient-to-b from-blue-400 to-blue-600 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-white">Total Time</h2>
+          <p class="text-4xl font-bold text-white">12:30:45</p>
+        </div>
+
+        <!-- Calories Burned -->
+        <div class="bg-gradient-to-b from-red-400 to-red-600 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-white">Calories Burned</h2>
+          <p class="text-4xl font-bold text-white">10,500 kcal</p>
+        </div>
+
+        <!-- Best Run -->
+        <div class="bg-gradient-to-b from-yellow-400 to-yellow-600 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-white">Best Run</h2>
+          <p class="text-4xl font-bold text-white">10 km - 50 minutes</p>
+        </div>
+
+        <!-- Average Pace -->
+        <div class="bg-gradient-to-b from-purple-400 to-purple-600 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-white">Average Pace</h2>
+          <p class="text-4xl font-bold text-white">5:00 / km</p>
+        </div>
+      </div>
+
+      <!-- Recent Runs Section -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Recent Runs</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700">Run #1 - 10 km</div>
+            <div class="text-gray-500">1 hour 05 minutes</div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700">Run #2 - 8 km</div>
+            <div class="text-gray-500">50 minutes</div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700">Run #3 - 5 km</div>
+            <div class="text-gray-500">35 minutes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graph/Chart Placeholder -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Run Data Over Time</h2>
+        <div class="h-64 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-lg">
+          <!-- Placeholder for a graph -->
+          <p class="text-center text-gray-500 pt-24">[Insert Graph Here]</p>
+        </div>
+      </div>
+
+      <!-- Leaderboard Section -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Leaderboard</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700 font-semibold">Meet</div>
+            <div class="text-gray-500">150 km</div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700 font-semibold">Sonu</div>
+            <div class="text-gray-500">140 km</div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700 font-semibold">Heer</div>
+            <div class="text-gray-500">130 km</div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-gray-700 font-semibold">Monil</div>
+            <div class="text-gray-500">100 km</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="flex justify-between items-center text-sm text-gray-500 mt-auto">
+        <p>&copy; 2025 RunTrack. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-700">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-700">Terms of Service</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
